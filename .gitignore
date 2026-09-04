@@ -1,0 +1,12 @@
+node_modules/
+test-results/
+playwright-report/
+.trae/
+
+# Jekyll
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+vendor/
+.bundle/

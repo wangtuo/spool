@@ -1,0 +1,12 @@
+{
+  "name": "llm-learning-map",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:browser": "playwright test",
+    "audit:links": "node scripts/check-core-links.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}

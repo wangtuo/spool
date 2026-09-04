@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="面向资深架构师的工业界 LLM 学习地图" />
+  <title>LLM Systems · Industrial Learning Map</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="directory.css" />
+  <link rel="stylesheet" href="a11y.css" />
+  <link rel="stylesheet" href="accessibility-overrides.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview"><span class="brand-mark">λ</span><span>LLM Systems<br><small>Industrial Map</small></span></a>
+      <nav class="nav" aria-label="主导航">
+        <a class="nav-link active" href="#overview" data-section="overview"><span>◈</span>总览</a>
+        <a class="nav-link" href="#directory" data-section="directory"><span>⌘</span>资源路标</a>
+        <a class="nav-link" href="#resources" data-section="resources"><span>↗</span>资源路线</a>
+        <a class="nav-link" href="#daily" data-section="daily"><span>☷</span>14 天计划</a>
+        <a class="nav-link" href="#deliverables" data-section="deliverables"><span>◇</span>架构产出</a>
+      </nav>
+      <div class="sidebar-foot"><div class="status-dot"></div><span>自学模式 · 本地保存</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="eyebrow">ARCHITECT TRACK / 2026</div><button class="reset-btn" id="resetProgress" aria-haspopup="dialog">重置进度</button></header>
+      <section id="overview" class="hero section-block">
+        <div class="hero-copy"><p class="kicker">从模型能力到生产系统</p><h1>把 LLM 学成<br><em>一套系统。</em></h1><p class="hero-desc">面向一线大厂资深分布式系统架构师的工业界知识地图。用论文建立判断，用代码验证机制，用架构产出沉淀能力。</p><div class="hero-actions"><a class="primary-btn" href="#daily">开始今天的学习 <span>→</span></a><a class="text-btn" href="#resources">查看资源路线</a></div></div>
+        <div class="hero-orbit"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit-core">LLM<br><span>SYSTEMS</span></div><span class="orbit-label label-top">MODEL</span><span class="orbit-label label-right">PLATFORM</span><span class="orbit-label label-bottom">PRODUCT</span><span class="orbit-label label-left">DATA</span></div>
+      </section>
+      <div id="migrationNotice" class="migration-notice" role="status" hidden></div>
+      <section class="stats-grid section-block"><div class="stat-card"><span class="stat-label">学习周期</span><strong>14</strong><span>个工作日</span></div><div class="stat-card"><span class="stat-label">每日投入</span><strong>90–120</strong><span>分钟</span></div><div class="stat-card progress-card"><span class="stat-label">当前进度</span><strong id="progressPercent">0%</strong><div class="progress-bar"><i id="progressBar"></i></div><span id="progressLabel">0 / 14 天通过</span></div></section>
+      <section id="directory" class="section-block directory-section"><div class="section-heading"><div><p class="kicker">SUPPLEMENTAL RESOURCE DIRECTORY</p><h2>补充资源目录</h2></div><p class="section-note"><strong>按需拓展，不计入 14 天必学任务。</strong> 在每日核心材料之外，用这里发现论文、课程、系统、模型和规范。官方入口用于确认能力边界；选型还要交叉看 benchmark、issue、生产案例和限制说明。</p></div><div class="directory-tools"><label class="sr-only" for="resourceSearch">搜索补充资源</label><input id="resourceSearch" type="search" aria-label="搜索补充资源" placeholder="搜索：FlashAttention / RAG / vLLM / 公司..." /><div class="category-row" id="categoryFilters" role="group" aria-label="补充资源分类"></div><span id="resultCount" class="result-count" role="status" aria-live="polite" aria-atomic="true"></span></div><div class="directory-grid" id="directoryGrid" aria-label="补充资源搜索结果"></div></section>
+      <section id="resources" class="section-block"><div class="section-heading"><div><p class="kicker">OPTIONAL LEARNING GUIDES</p><h2>按需跟着高手拓展</h2></div><p class="section-note"><strong>以下学习单元是补充路线，不替代每天标注的核心材料，也不影响 14 天通过进度。</strong> 每位创作者承担一个角色：直觉、体系、实现、论文或趋势。</p></div><div class="resource-grid" id="resourceGrid"></div></section>
+      <section id="daily" class="section-block"><div class="section-heading"><div><p class="kicker">14-DAY EXECUTION</p><h2>两周建立工业界判断力</h2></div><div class="filter-row" id="weekFilters"></div></div><div class="week-brief" id="weekBrief"></div><div class="daily-layout"><div class="day-list" id="dayList"></div><aside class="today-panel"><p class="kicker">LEARNING LOOP</p><h3>今天的记录模板</h3><p class="panel-copy">学完之后，用 5 分钟回答下面的问题。知识只有变成决策，才真正属于你。</p><div class="prompt-list"><div><b>01</b><span>今天要回答的问题？</span></div><div><b>02</b><span>哪个实验支持了结论？</span></div><div><b>03</b><span>对架构决策有什么影响？</span></div><div><b>04</b><span>仍未解决的问题？</span></div></div><button class="outline-btn" id="copyTemplate">复制记录模板</button></aside></div></section>
+      <section id="deliverables" class="section-block"><div class="section-heading"><div><p class="kicker">ARCHITECT OUTPUTS</p><h2>最后留下四类资产</h2></div></div><div class="deliverable-grid"><article><span>01</span><h3>模型选型矩阵</h3><p>能力、质量、成本、延迟、许可证与生态。</p></article><article><span>02</span><h3>平台参考架构</h3><p>数据、训练、推理、评测、治理与运营。</p></article><article><span>03</span><h3>实验与容量模型</h3><p>用 benchmark 支撑吞吐、SLO、GPU 与成本结论。</p></article><article><span>04</span><h3>真实业务方案</h3><p>灰度、故障、回滚、权限与 90 天落地路线。</p></article></div></section>
+      <footer><span>LLM Systems · Industrial Learning Map</span><a href="LEARNING_PLAN.md">查看完整 Markdown 规划 →</a></footer>
+    </main>
+  </div>
+  <dialog id="detailDialog" aria-labelledby="detailDialogTitle"><button class="dialog-close" id="closeDialog" aria-label="关闭资源详情">×</button><div id="dialogContent"></div></dialog>
+  <dialog id="resetDialog" class="confirm-dialog" aria-labelledby="resetDialogTitle" aria-describedby="resetDialogDescription"><h2 id="resetDialogTitle">重置全部学习进度？</h2><p id="resetDialogDescription">这会清除所有答案、证据摘要、验收反馈和通过状态，且无法撤销。</p><div class="dialog-actions"><button class="outline-action" id="cancelReset">取消，保留进度</button><button class="danger-action" id="confirmReset">确认重置</button></div></dialog>
+  <p id="appAnnouncements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+  <script src="app.js?v=20260830-day-14-release-audit"></script>
+</body>
+</html>

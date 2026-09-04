@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ship Wisp MR"
+  short_description: "Create and shepherd a Wisp MR until it is ready"
+  default_prompt: "Use $ship-mr to submit the current Wisp change as a focused MR and shepherd it until ready to merge."

@@ -183,4 +183,4 @@ type Retriever interface {
 
 ---
 
-*上一篇：[01 · schema：消息与流式的统一数据模型]({{ site.baseurl }}{% post_url 2026-09-03-eino-01-schema-and-stream %}) · 下一篇：03 · compose 基础 —— Chain 与 Graph 的拓扑构建。*
+*上一篇：[01 · schema：消息与流式的统一数据模型]({% post_url 2026-09-03-eino-01-schema-and-stream %}) · 下一篇：03 · compose 基础 —— Chain 与 Graph 的拓扑构建。*

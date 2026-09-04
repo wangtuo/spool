@@ -284,4 +284,4 @@ func (r *runner) transform(ctx context.Context, input streamReader, opts ...Opti
 
 ---
 
-*上一篇：[03 · compose 基础：Chain 与 Graph 的拓扑构建]({{ site.baseurl }}{% post_url 2026-09-04-eino-03-chain-graph %}) · 下一篇：05 · 运行时（上）—— Invoke 调用链与任务调度循环。*
+*上一篇：[03 · compose 基础：Chain 与 Graph 的拓扑构建]({% post_url 2026-09-04-eino-03-chain-graph %}) · 下一篇：05 · 运行时（上）—— Invoke 调用链与任务调度循环。*

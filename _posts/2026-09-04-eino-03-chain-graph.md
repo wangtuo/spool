@@ -179,4 +179,4 @@ func (c *Chain[I, O]) addNode(node *graphNode, options *graphAddNodeOpts) {
 
 ---
 
-*上一篇：[02 · components：组件接口的抽象哲学]({{ site.baseurl }}{% post_url 2026-09-03-eino-02-components %}) · 下一篇：04 · 编译期 —— Compile 如何把图变成可执行对象。*
+*上一篇：[02 · components：组件接口的抽象哲学]({% post_url 2026-09-03-eino-02-components %}) · 下一篇：04 · 编译期 —— Compile 如何把图变成可执行对象。*

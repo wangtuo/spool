@@ -232,4 +232,4 @@ eino 维护了一个「类型 → 合并函数」的注册表。compose 运行�
 
 ---
 
-*上一篇：[00 · 开篇：eino 想解决什么问题]({{ site.baseurl }}{% post_url 2026-09-02-eino-00-why-eino %}) · 下一篇：02 · components —— 组件接口的抽象哲学。*
+*上一篇：[00 · 开篇：eino 想解决什么问题]({% post_url 2026-09-02-eino-00-why-eino %}) · 下一篇：02 · components —— 组件接口的抽象哲学。*

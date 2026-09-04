@@ -243,4 +243,4 @@ graph.AddEdge(nodeKeyDirectReturn, compose.END)  // 直接返回节点连到 END
 
 ---
 
-*上一篇：[08 · Lambda：把普通函数变成图节点]({{ site.baseurl }}{% post_url 2026-09-04-eino-08-lambda %}) · 下一篇：10 · 设计取舍复盘：eino 教会我们的事。*
+*上一篇：[08 · Lambda：把普通函数变成图节点]({% post_url 2026-09-04-eino-08-lambda %}) · 下一篇：10 · 设计取舍复盘：eino 教会我们的事。*

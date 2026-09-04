@@ -171,4 +171,4 @@ if enableCallback {
 
 ---
 
-*上一篇：[06 · 运行时（下）：流式 fan-in / fan-out 与 Pregel channel]({{ site.baseurl }}{% post_url 2026-09-04-eino-06-streaming-fanin %}) · 下一篇：08 · Lambda：把普通函数变成图节点。*
+*上一篇：[06 · 运行时（下）：流式 fan-in / fan-out 与 Pregel channel]({% post_url 2026-09-04-eino-06-streaming-fanin %}) · 下一篇：08 · Lambda：把普通函数变成图节点。*

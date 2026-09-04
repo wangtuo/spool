@@ -130,4 +130,4 @@ eino 最值得学的，不是某一个具体技巧，而是它的**取舍纪律*
 
 ---
 
-*回到 [eino 系列目录]({{ site.baseurl }}/series/eino.html) · 上一篇：[09 · 实战：ReAct Agent 是怎么用图搭出来的]({{ site.baseurl }}{% post_url 2026-09-04-eino-09-react-agent %})。系列完。*
+*回到 [eino 系列目录]({{ '/series/eino/' | relative_url }}) · 上一篇：[09 · 实战：ReAct Agent 是怎么用图搭出来的]({% post_url 2026-09-04-eino-09-react-agent %})。系列完。*

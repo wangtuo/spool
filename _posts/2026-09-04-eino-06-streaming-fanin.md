@@ -203,4 +203,4 @@ type dagChannel struct {
 
 ---
 
-*上一篇：[05 · 运行时（上）：Invoke 调用链与任务调度循环]({{ site.baseurl }}{% post_url 2026-09-04-eino-05-runtime-invoke %}) · 下一篇：07 · callbacks：横切关注点的切面机制。*
+*上一篇：[05 · 运行时（上）：Invoke 调用链与任务调度循环]({% post_url 2026-09-04-eino-05-runtime-invoke %}) · 下一篇：07 · callbacks：横切关注点的切面机制。*

@@ -32,13 +32,13 @@ maxSteps := r.options.maxRunSteps
 
 然后从一个**虚拟的 START 任务**启动：把外部 input 当作 START 节点的产出，算出第一批要跑的任务：
 
-{% highlight go %}
+{% highlight go %}{% raw %}
 nextTasks, result, isEnd, err = r.calculateNextTasks(ctx, []*task{{
     nodeKey: START,
     call:    r.inputChannels,   // START 的特殊 chanCall
     output:  input,
 }}, isStream, cm, optMap)
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 之后就是主循环。去掉 checkpoint / interrupt 这些支线，骨架非常清楚：
 
@@ -288,4 +288,4 @@ func (t *taskManager) execute(currentTask *task) {
 
 ---
 
-*上一篇：[04 · Compile：把一张图编译成可执行对象]({{ site.baseurl }}{% post_url 2026-09-04-eino-04-compile %}) · 下一篇：06 · 运行时（下）—— 流式 fan-in / fan-out 与 Pregel channel。*
+*上一篇：[04 · Compile：把一张图编译成可执行对象]({% post_url 2026-09-04-eino-04-compile %}) · 下一篇：06 · 运行时（下）—— 流式 fan-in / fan-out 与 Pregel channel。*

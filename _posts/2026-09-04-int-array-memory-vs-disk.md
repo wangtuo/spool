@@ -1,5 +1,6 @@
 ---
 title: "int 数组在内存里和磁盘上，为什么是两种完全不同的格式"
+series: 编码与存储
 description: 同一个 int32 数组，放进内存追求的是随机访问、CPU cache、SIMD 和少分支；写到磁盘追求的是压缩率、顺序 I/O、按需读取与可演进性。设计目标几乎相反，所以格式也几乎相反。本文从平坦数组讲到 varint、delta、bit packing、RLE、dictionary，再到嵌套数组的列式表达。
 tags: [存储, 列式格式, arrow, parquet, 编码]
 ---

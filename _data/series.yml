@@ -4,3 +4,6 @@
 - slug: context-hub
   title: Context Hub 源码分析
   permalink: /series/context-hub/
+- slug: encoding-storage
+  title: 编码与存储
+  permalink: /series/encoding-storage/
